@@ -31,3 +31,6 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+// route login
+Route::get('admin/login', [AdminController::class, 'login'])->name('admin.login');
