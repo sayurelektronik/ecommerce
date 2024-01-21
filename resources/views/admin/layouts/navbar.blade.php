@@ -18,7 +18,7 @@
                 <div class="dropdown-list-content dropdown-list-message">
                     <a href="#" class="dropdown-item dropdown-item-unread">
                         <div class="dropdown-item-avatar">
-                            <img alt="image" src="{{ asset('assets/img/avatar/avatar-1.png') }}"
+                            <img alt="image" src="{{ asset('backend/backend/assets/img/avatar/avatar-1.png') }}"
                                 class="rounded-circle">
                             <div class="is-online"></div>
                         </div>
@@ -30,7 +30,7 @@
                     </a>
                     <a href="#" class="dropdown-item dropdown-item-unread">
                         <div class="dropdown-item-avatar">
-                            <img alt="image" src="{{ asset('assets/img/avatar/avatar-2.png') }}"
+                            <img alt="image" src="{{ asset('backend/assets/img/avatar/avatar-2.png') }}"
                                 class="rounded-circle">
                         </div>
                         <div class="dropdown-item-desc">
@@ -41,7 +41,7 @@
                     </a>
                     <a href="#" class="dropdown-item dropdown-item-unread">
                         <div class="dropdown-item-avatar">
-                            <img alt="image" src="{{ asset('assets/img/avatar/avatar-3.png') }}"
+                            <img alt="image" src="{{ asset('backend/assets/img/avatar/avatar-3.png') }}"
                                 class="rounded-circle">
                             <div class="is-online"></div>
                         </div>
@@ -53,7 +53,7 @@
                     </a>
                     <a href="#" class="dropdown-item">
                         <div class="dropdown-item-avatar">
-                            <img alt="image" src="{{ asset('assets/img/avatar/avatar-4.png') }}"
+                            <img alt="image" src="{{ asset('backend/assets/img/avatar/avatar-4.png') }}"
                                 class="rounded-circle">
                         </div>
                         <div class="dropdown-item-desc">
@@ -64,7 +64,7 @@
                     </a>
                     <a href="#" class="dropdown-item">
                         <div class="dropdown-item-avatar">
-                            <img alt="image" src="{{ asset('assets/img/avatar/avatar-5.png') }}"
+                            <img alt="image" src="{{ asset('backend/assets/img/avatar/avatar-5.png') }}"
                                 class="rounded-circle">
                         </div>
                         <div class="dropdown-item-desc">
@@ -141,7 +141,7 @@
         </li>
         <li class="dropdown"><a href="#" data-toggle="dropdown"
                 class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                <img alt="image" src="{{ asset('assets/img/avatar/avatar-1.png') }}" class="rounded-circle mr-1">
+                <img alt="image" src="{{ asset('backend/assets/img/avatar/avatar-1.png') }}" class="rounded-circle mr-1">
                 <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
