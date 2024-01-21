@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{ asset('assets/modules/weather-icon/css/weather-icons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/modules/weather-icon/css/weather-icons-wind.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/modules/summernote/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -40,7 +42,7 @@
             <div class="navbar-bg"></div>
             {{-- navbar content --}}
             @include('admin.layouts.navbar')
-            
+
             {{-- sidebar content --}}
             @include('admin.layouts.sidebar')
 
@@ -78,6 +80,7 @@
     <script src="{{ asset('assets/modules/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
     <script src="{{ asset('assets/modules/summernote/summernote-bs4.js') }}"></script>
     <script src="{{ asset('assets/modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <!-- Page Specific JS File -->
     <script src="{{ asset('assets/js/page/index-0.js') }}"></script>
@@ -85,6 +88,13 @@
     <!-- Template JS File -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script>
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                toastr.->error("{{ $error }}");
+            @endforeach
+        @endif
+    </script>
 </body>
 
 </html>
