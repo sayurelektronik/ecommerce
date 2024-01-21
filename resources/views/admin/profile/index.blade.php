@@ -10,7 +10,6 @@
             </div>
         </div>
         <div class="section-body">
-
             <div class="row mt-sm-4">
 
                 <div class="col-12 col-md-12 col-lg-12">
@@ -41,6 +40,39 @@
                                         <label>Email</label>
                                         <input type="text" name="email" class="form-control" value="{{ Auth::user()->email }}" required="">
 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-right">
+                                <button class="btn btn-primary">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <form method="post" class="needs-validation" novalidate="" action="{{ route('admin.password.update') }}" enctype="multipart/form-data">
+                            @csrf
+
+                            <div class="card-header">
+                                <h4>Update Password</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label>Current Password</label>
+                                        <input type="text" name="current_password" class="form-control">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label>Now Password</label>
+                                        <input type="text" name="password" class="form-control">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label>Confirm Password</label>
+                                        <input type="text" name="password_confirmation" class="form-control">
                                     </div>
                                 </div>
                             </div>
